@@ -114,6 +114,8 @@ names # [5, 'b', 10, True, [1, 2, 3]]
 
 names[0:3] # [5, 'b', 10]
 
+
+
 # Liste metodları
 
 dir(names) # kullanılabilecek methodları gösterir
