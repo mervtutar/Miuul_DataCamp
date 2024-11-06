@@ -24,9 +24,20 @@ x.items() # key value çiftleri dict_items([('name', 'Merve'), ('Age', ['a', 5])
 x.update({"name": "mrv"}) # {'name': 'mrv', 'Age': ['a', 5], 'No': [1, 2, 3]}
 
 
-#Tuple-demet listelerin değiştirilemeyen halidir parantezle ifade edilir, sıralıdır, kapsayıcıdır
-x=("python","ml","ds")
+#Tuple-demet listelerin değiştirilemeyen halidir parantezle ifade edilir, sıralıdır, kapsayıcıdır(birden fazla
+# veri yapsını tutabilir)
+x=("python","ml","ds",2)
 type(x)
+
+x[0]
+x[0:3]
+
+x[0]=99 # değiştirilemez hata verir, type error
+# değiştirmek için tuple'ı list e çevirip değeri değiştirip tekrar tuple a çevirebiliriz
+x= list(x)
+x[0]=99
+x=tuple(x)
+
 
 #Set-kümeler gibi, değiştirilebilir, sırasız eşsiz ve kapsayıcıdır
 x=("python","ml","ds")
@@ -105,7 +116,7 @@ names[0:3] # [5, 'b', 10]
 
 # Liste metodları
 
-dir(names)
+dir(names) # kullanılabilecek methodları gösterir
 
 len(names) #5
 
